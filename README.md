@@ -42,7 +42,7 @@ func main() {
 To interact with a specific resource of functionaliy group, just reference
 it from the client. As an example, to list all templates, we'd do:
 
-```
+```go
 // listGophishTemplates lists all templates in the given gophish installation.
 func listGophishTemplates(client *gophish.Client) error  {
     templates, err := client.Templates.ListTemplates()
